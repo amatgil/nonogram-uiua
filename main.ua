@@ -8,11 +8,11 @@ Adv       ← /⊂≡Next                             # ? [Board]
 LineValid ← ≍⟜⍜∩□↧ ˜(▽=₁)°▽                     # ? Line Rule
 IsValid   ← /××∩≡(LineValid⊙°□) ⊃(⍉⊙⋅∘|⊙⊙◌) ⊙°⊟ # ? Setup Board
 
-LossSetup ← [
+Example ← [
   {[1 1] [1 1 1] [1 1 1] [] [1 1 1] [1 1 1] [1 1 3]}
   {[3] [3] [3] [] [3 3] [1] [2 1]}
 ]
 
-⊃(Start|¤) LossSetup
+⊃(Start|¤) Example
 ⊙⊙[]
 ⍢(▽⊃(≡IsValid|⊙∘) Adv dump⊣ ⊃(⊙∘|⊸&p⊂⧻⊙⋅∘)|±⧻ ⊚=∞)

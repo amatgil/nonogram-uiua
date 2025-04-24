@@ -1,0 +1,18 @@
+# Experimental!
+
+# Setup is an two-array of the rules, rows first
+
+Start     ← ¤ ↯⊙∞ ˙⊟⧻⊢                          # [Board] ? Setup
+Next      ← ⊟⊃(⍜⊡⋅0|⍜⊡⋅1) ⊸(⊢⊚=∞)               # ? Board
+Adv       ← /⊂≡Next                             # ? [Board]
+LineValid ← ≍⟜⍜∩□↧ ˜(▽=₁)°▽                     # ? Line Rule
+IsValid   ← /××∩≡(LineValid⊙°□) ⊃(⍉⊙⋅∘|⊙⊙◌) ⊙°⊟ # ? Setup Board
+
+LossSetup ← [
+  {[1 1] [1 1 1] [1 1 1] [] [1 1 1] [1 1 1] [1 1 3]}
+  {[3] [3] [3] [] [3 3] [1] [2 1]}
+]
+
+⊃(Start|¤) LossSetup
+⊙⊙[]
+⍢(▽⊃(≡IsValid|⊙∘) Adv dump⊣ ⊃(⊙∘|⊸&p⊂⧻⊙⋅∘)|±⧻ ⊚=∞)

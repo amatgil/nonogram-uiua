@@ -1,5 +1,5 @@
 {
-  description = "Default uiua flake (casenc)";
+  description = "Nongram solver, in uiua!";
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
   };

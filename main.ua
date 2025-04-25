@@ -18,5 +18,5 @@ Example ← [
 
 # Solve ∩¤⊸Start Example
 ⟜Start Example
-∩⤚≡(=+-₁⊃/+⧻°□)⊙: ∩°⊟ ⊸⊙△
+∩⤚≡(=/(+1+)°□)⊙: ∩°⊟ ⊸⊙△
 # dipdip(fork) # next step would be to fill the 0s and 1s of the lines that are trivially found (e.g. 1_1_3 with width=7 -> 1_0_1_0_1_1_1)
